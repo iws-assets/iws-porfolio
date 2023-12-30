@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>The InfyWebStudios - Where Innovation Meets Impeccable Design!</title>
+    <title>InfyWebStudios - Where Innovation Meets Impeccable Design!</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -303,7 +303,7 @@
                             <p class="text-center mb-4">
                                 Interested in our services? Send us a message, and let's discuss how we can assist you.
                             </p>
-                            <form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeTeUK2MoJhQ-UraFM6BteqnrKmEYQWMsYlR5kOF2Vbgu7qxg/formResponse">
+                            <form method="post" id="gform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeTeUK2MoJhQ-UraFM6BteqnrKmEYQWMsYlR5kOF2Vbgu7qxg/formResponse">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -759,6 +759,19 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script type="text/javascript">
+        var load = 0;
+        
+        document.getElementById('gform').onload = function(){
+            /*Execute on every reload on iFrame*/
+            load++;
+            if(load > 1){
+                /*Second reload is a submit*/
+                document.location = "https://www.google.com/";
+            }
+        }
+        </script>
+    
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
