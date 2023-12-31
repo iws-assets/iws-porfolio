@@ -47,7 +47,7 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand p-0">
-                    <h1 class="m-0">InfyWeb</h1>
+                    <h1 class="m-0">InfyWebStudios</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -58,7 +58,7 @@
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="index.html#about-section" class="nav-item nav-link">About</a>
                         <a href="index.html#service-section" class="nav-item nav-link">Service</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="index.html#contact-section" class="nav-item nav-link">Contact</a>
                         
 
                     </div>
@@ -191,7 +191,7 @@
         </div>
         -->
         <!-- Contact End -->
-        
+              
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
@@ -199,8 +199,8 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
                         <p><i class="fa fa-map-marker-alt me-3"></i>Chennai,India.</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@theinfyweb.com</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91 8870786793</p>
+                        <p><i class="fa fa-envelope me-3"></i>infywebstudios@hotmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -263,7 +263,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">thenfyweb.com</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">www.infywebstudios.com</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							<!--
@@ -297,10 +297,22 @@
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script type="text/javascript">
+        var load = 0;
+        
+        document.getElementById('gform').onload = function(){
+            /*Execute on every reload on iFrame*/
+            load++;
+            if(load > 1){
+                /*Second reload is a submit*/
+                document.location = "https://www.google.com/";
+            }
+        }
+        </script>
+    
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
