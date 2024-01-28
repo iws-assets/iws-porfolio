@@ -1,7 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #6222CC;
-    --secondary: #FBA504;
+   /* --primary: #6222CC;
+    --secondary: #FBA504;*/
+   --primary: #6222CC;
+    --secondary: #6222CC;
     --light: #F6F4F9;
     --dark: #04000B;
 }
@@ -229,7 +231,8 @@ h6,
     }
 
     .sticky-top.navbar-light .btn {
-        color: var(--dark);
+        /*color: var(--dark);*/
+        color: white;
         background: var(--secondary);
     }
 }
